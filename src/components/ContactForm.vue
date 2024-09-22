@@ -1,6 +1,11 @@
 <script setup>
 import { ref, defineEmits } from 'vue';
 
+// Selected category
+const props = defineProps({
+  selectedCategory: String
+});
+
 // Define emit for an added contact
 const emit = defineEmits(['contactAdded']);
 
@@ -14,12 +19,15 @@ const onSubmit = () => {
         emit('contactAdded',{
             name: contactName.value,
             phone: contactPhone.value,
+            category: props.selectedCategory 
         });
 
       // Clear the form inputs
       contactName.value = '';
       contactPhone.value = '';
     }
+
+
 };
 
 
