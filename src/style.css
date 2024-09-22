@@ -1,6 +1,6 @@
 /* style.css */
 
-/* Style Sheet*/
+/* General styles */
 body {
   font-family: Arial, sans-serif;
   margin: 0;
@@ -8,26 +8,73 @@ body {
   background-color: #f4f4f4;
 }
 
-h1, h2 {
-  color: #314ead;
+h4 {
+  font-size: 25px;
+  color: #5e8b76;
   text-align: center;
 }
 
-h3 {
-  color: rgb(16, 104, 126);
-  padding-top: 7px;  
-  margin: 0;
+h2 {
+  font-size: 25px;
+  color: #51b4e2;
   text-align: center;
 }
 
+h1, h3 {
+  font-size: 25px;
+  color: #f3dc57;
+  text-align: center;
+  margin-bottom: 25px;
+}
 
+/* Header */
 header {
-  background-color: #007BFF;
+  background-color: #60a1e7;
   color: white;
-  padding: 10px 0;
+  padding: 25px 0;
   text-align: center;
+  font-size: 15px;
 }
 
+/* Category Manager */
+.category-manager {
+  margin: 20px auto;
+  padding: 25px;
+  width: 80%;
+  max-width: 600px;
+  background-color: #fff;
+  border-radius: 8px;
+  text-align: center; 
+}
+
+.category-manager button {
+  color: white;
+  padding: 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 20px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+.category-family {
+  background-color: #f7856c; 
+}
+
+.category-friends {
+  background-color: #33C1FF; 
+}
+
+.category-work {
+  background-color: #28a745; 
+}
+
+.category-manager button:hover {
+  opacity: 0.9; 
+}
+
+/* Contact Form section */
 #contact-form {
   background-color: white;
   margin: 20px auto;
@@ -37,17 +84,13 @@ header {
   max-width: 600px;
 }
 
-#contact-form h2 {
-  margin-top: 0;
-}
-
 #contact-form input {
   width: 95%;
   padding: 10px;
   margin-bottom: 10px;
   border: 1px solid #ddd;
   border-radius: 4px;
-  font-size: 20px;
+  font-size: 18px;
 }
 
 #contact-form button {
@@ -57,13 +100,14 @@ header {
   border: none;
   border-radius: 4px;
   cursor: pointer;
-  font-size: 20px;
+  font-size: 18px;
 }
 
 #contact-form button:hover {
   background-color: #218838;
 }
 
+/* Contact List section */
 #contact-list {
   margin: 20px auto;
   padding: 20px;
@@ -81,16 +125,33 @@ header {
 }
 
 #contactList li {
-  background-color: #c3d3e4;
+  background-color: #e6ecf1; 
   border: 1px solid #ddd;
   margin-bottom: 10px;
   padding: 10px;
   border-radius: 4px;
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  color: #333; 
 }
+
 
 #contactList li span {
   font-size: 16px;
 }
 
+.delete-button {
+  background-color: red; 
+  color: white; 
+  border: none;
+  padding: 10px 13px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  text-align: right;
+}
+
+.delete-button:hover {
+  background-color: darkred; 
+}

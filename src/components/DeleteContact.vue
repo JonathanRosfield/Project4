@@ -12,8 +12,6 @@ const handleDelete = () => {
 </script>
 
 <template>
- <button @click="handleDelete">Delete</button>
-
-
+  <button class="delete-button" @click="handleDelete">Delete</button>
 
 </template>

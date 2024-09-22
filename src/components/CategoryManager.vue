@@ -17,23 +17,16 @@ const selectCategory = (category) => {
   emit('categorySelected', category);
 };
 
-const selectedCategory = ref(null);
-
 
 </script>
 
 <template>
 <div class="category-manager">
-    <h2>Select a Category for your Contact</h2>
+    <h3>Select a Category for your Contact</h3>
     <div>
-        <button
-            v-for="category in categories"
-            :key="category"
-            @click="selectCategory(category)"
-            :class="{ selected: category === selectedCategory }"
-        >
-          {{ category }} 
-        </button>
+        <button class="category-family" @click="selectCategory('Family')">Family</button>
+        <button class="category-friends" @click="selectCategory('Friends')">Friends</button>
+        <button class="category-work" @click="selectCategory('Work')">Work</button>
     </div>
 </div>
 
