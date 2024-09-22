@@ -4,6 +4,7 @@ import Header from './components/Header.vue';
 import ContactForm from './components/ContactForm.vue';
 import ContactList from './components/ContactList.vue';
 import CategoryManager from './components/CategoryManager.vue';
+import DeleteContact from './components/DeleteContact.vue';
 
 const contacts = ref([]);
 
